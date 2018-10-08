@@ -129,10 +129,10 @@
 
   <!-- STANDARD MENU -->
   <nav>
-    <div>
-      <div>
-        <a href="#">Logo</a>
-        <ul>
+    <div clas="nav-wrapper">
+      <div class="container">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-small-and-down">
           <li>
             <a href="#">Home</a>
           </li>
@@ -151,14 +151,14 @@
   <br>
 
   <!-- RESPONSIVE WITH SIDE MENU -->
-  <nav>
-    <div>
-      <div>
-        <a href="#">Logo</a>
-        <a href="#">
-          <i></i>
+  <nav class="blue darken-4">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <a href="#" class="button-collapse" data-activates="mobile-nav">
+          <i class="material-icons">menu</i>
         </a>
-        <ul>
+        <ul class="right hide-on-med-and-down">
           <li>
             <a href="#">Home</a>
           </li>
@@ -171,22 +171,23 @@
 
           <!-- DROPDOWN TRIGGER -->
           <li>
-            <a href="#!">Dropdown
-              <i></i>
+            <a href="#!" class="dropdown-button" data-activates="my-dropdown">Dropdown
+              <i class="material-icons right">arrow_drop_down</i>
             </a>
+
           </li>
           <!-- BUTTON LINK -->
           <li>
-            <a>Login</a>
+            <a class="btn waves-effect waves-light">Login</a>
           </li>
           <!-- ICON LINK -->
           <li>
             <a href="#">
-              <i>p</i>
+              <i></i>
             </a>
           </li>
         </ul>
-        <ul>
+        <ul class="slide-nav" id="mobile-nav">
           <li>
             <a href="#">Home</a>
           </li>
@@ -202,8 +203,8 @@
   </nav>
 
   <!-- DROPDOWN MENU -->
-  <ul>
-    <li>
+  <ul id="my-dropdown">
+    <li class="">
       <a href="#">Link 1</a>
     </li>
     <li>
@@ -247,7 +248,7 @@
       });
 
       // JAVASCRIPT START HERE //
-
+      $('.button-collapse').sideNav();
 
 
 
