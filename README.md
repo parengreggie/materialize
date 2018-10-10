@@ -11,3 +11,6 @@ install prettier (Prettier - Code formatter)
 
 for travelville
 get images in pexels.com
+
+Madmin
+chart - canvasjs.com
